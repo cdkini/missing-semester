@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+function marco() {
+    pwd > /home/ckini123/code/courses/missing-semester/lecture2/marco.txt
+    echo "Set marco in $(pwd)"
+}

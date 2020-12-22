@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+calls=0
+while true; do
+    calls=$((calls+1))
+    ./faulty_script >> output.log 2>> failures.log
+    if [[ "$?" -ne 0 ]]; then
+        break
+    fi
+done
+
+echo "Program ran 'faulty_script' $calls times before running into an error."

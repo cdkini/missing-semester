@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+find .|grep -e "\.html$" | tar -T - -czf html_files.tar.gz

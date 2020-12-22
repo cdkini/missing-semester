@@ -1,0 +1,6 @@
+#/usr/bin/env bash
+function polo() {
+    cd ~
+    cd $(head -n 1 "/home/ckini123/code/courses/missing-semester/lecture2/marco.txt")
+    echo "Returned to marco set at $(pwd)"
+}
